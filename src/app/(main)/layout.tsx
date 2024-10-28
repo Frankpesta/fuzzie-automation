@@ -1,3 +1,4 @@
+import InfoBar from '@/components/infobar'
 import Sidebar from '@/components/sidebar'
 import React from 'react'
 
@@ -8,6 +9,7 @@ function Layout({children}: Props) {
     <div className='flex overflow-hidden h-screen'>
         <Sidebar />
         <div className="w-full">
+            <InfoBar />
             {children}
         </div>
     </div>
